@@ -1,5 +1,5 @@
 # .vim
-My .vim directory setup.
+My .vim setup.
 
 Uses [pathogen](https://github.com/tpope/vim-pathogen) and git submodules for plugin managment.
 
