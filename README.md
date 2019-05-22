@@ -22,6 +22,6 @@ git submodule add https://github.com/neovimhaskell/haskell-vim.git
 ```
 
 ### Removing Modules
-See `https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule#1260982`
+See <https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule#1260982>
 
-Reference: `https://mendo.zone/fun/neovim-setup-haskell/#how-i-vim`
+Reference: <https://mendo.zone/fun/neovim-setup-haskell/#how-i-vim>
