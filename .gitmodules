@@ -16,3 +16,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/vim-hug-neovim-rpc"]
+	path = bundle/vim-hug-neovim-rpc
+	url = git@github.com:roxma/vim-hug-neovim-rpc.git
+[submodule "bundle/nvim-yarp"]
+	path = bundle/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp.git

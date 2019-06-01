@@ -80,3 +80,5 @@ map <silent> <Leader>t :CtrlP()<CR>
 noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
+""""" Deoplete (autocompleter)
+let g:deoplete#enable_at_startup = 1
