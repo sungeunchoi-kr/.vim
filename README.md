@@ -7,7 +7,7 @@ Uses [pathogen](https://github.com/tpope/vim-pathogen) and git submodules for pl
 
 ### Fresh Pull
 ```bash
-git clone --recursive https://github.com/johnmendonca/vimrc.git .vim
+git clone --recursive https://github.com/sungeunchoi-kr/.vim.git .vim
 ```
 
 ### Update
@@ -18,7 +18,7 @@ git submodule update --recursive --remote
 ### Adding New Modules
 ```bash
 cd ~/.vim/bundle/
-git submodule add https://github.com/neovimhaskell/haskell-vim.git
+git submodule add https://github.com/sungeunchoi-kr/.vim.git
 ```
 
 ### Removing Modules
