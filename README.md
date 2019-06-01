@@ -18,7 +18,7 @@ git submodule update --recursive --remote
 ### Adding New Modules
 ```bash
 cd ~/.vim/bundle/
-git submodule add https://github.com/sungeunchoi-kr/.vim.git
+git submodule add REPOSITORY
 ```
 
 ### Removing Modules
