@@ -82,3 +82,20 @@ let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 """"" Deoplete (autocompleter)
 let g:deoplete#enable_at_startup = 1
+
+""""" Supertab (choose completion with tab instead of arrow keys)
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
+""""" Syntastic
+" use jshint
+let g:syntastic_javascript_checkers = ['jshint']
+" show any linting errors immediately
+let g:syntastic_check_on_open = 1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

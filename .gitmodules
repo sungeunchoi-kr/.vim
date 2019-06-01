@@ -22,3 +22,6 @@
 [submodule "bundle/nvim-yarp"]
 	path = bundle/nvim-yarp
 	url = git@github.com:roxma/nvim-yarp.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
