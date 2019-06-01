@@ -73,7 +73,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 """"" Nerdtree
-map <Leader>n :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 """"" CtrlP
 map <silent> <Leader>t :CtrlP()<CR>
