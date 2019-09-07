@@ -81,7 +81,12 @@ map <C-n> :NERDTreeToggle<CR>
 """"" CtrlP
 map <silent> <Leader>t :CtrlP()<CR>
 noremap <leader>b<space> :CtrlPBuffer<cr>
-let g:ctrlp_custom_ignore = '\v[\/]dist$'
+" Ignore some folders and files for CtrlP indexing
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+  \ }
+"let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 """"" Deoplete (autocompleter)
 let g:deoplete#enable_at_startup = 1
