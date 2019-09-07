@@ -96,7 +96,9 @@ let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 """"" Syntastic
 " use jshint
-let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
+
 " show any linting errors immediately
 let g:syntastic_check_on_open = 1
 set statusline+=%#warningmsg#
