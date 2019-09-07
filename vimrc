@@ -24,6 +24,9 @@ set incsearch
 set history=1000
 set clipboard=unnamedplus,autoselect
 
+" Search and highlight does not jump to next word
+nnoremap * *``
+
 set completeopt=menuone,menu,longest
 
 set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
