@@ -9,23 +9,21 @@ set shiftwidth=4
 set expandtab
 set background=dark
 set hlsearch
+" Search and highlight does not jump to next word
+nnoremap * *``
 set nocompatible
 set number
 set nowrap
 set showmode
-set tw=80
+set colorcolumn=80
 set smartcase
 set smarttab
 set smartindent
 set autoindent
-" set softtabstop=2
+" move the highlight as you add characters to the search string.
 set incsearch
-"set mouse=a
 set history=1000
 set clipboard=unnamedplus,autoselect
-
-" Search and highlight does not jump to next word
-nnoremap * *``
 
 set completeopt=menuone,menu,longest
 
@@ -34,6 +32,12 @@ set wildmode=longest,list,full
 set wildmenu
 set completeopt+=longest
 
+" Ctags navigation addendum
+" https://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" 256 colors
 set t_Co=256
 
 set cmdheight=1
@@ -59,21 +63,12 @@ endfunction
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
 
+" fzf fuzzy file search
+" https://github.com/junegunn/fzf
+set rtp+=~/.fzf
+
 " Pathgoen
 execute pathogen#infect()
-
-" http://www.stephendiehl.com/posts/vim_2016.html
-""""" Syntastic
-map <Leader>s :SyntasticToggleMode<CR>
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
 
 """"" Nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -94,9 +89,10 @@ let g:deoplete#enable_at_startup = 1
 """"" Supertab (choose completion with tab instead of arrow keys)
 let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
+" http://www.stephendiehl.com/posts/vim_2016.html
 """"" Syntastic
-" use jshint
-" let g:syntastic_javascript_checkers = ['jshint']
+" map <Leader>s :SyntasticToggleMode<CR>
+
 let g:syntastic_javascript_checkers = ['eslint']
 
 " show any linting errors immediately
@@ -109,3 +105,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+""""" vim-jsx-pretty
+let g:vim_jsx_pretty_colorful_config = 1
+
