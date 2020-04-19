@@ -23,5 +23,9 @@ git submodule add REPOSITORY
 
 ### Removing Modules
 See <https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule#1260982>
+```
+git rm the_submodule
+rm -rf .git/modules/the_submodule
+```
 
 Reference: <https://mendo.zone/fun/neovim-setup-haskell/#how-i-vim>

@@ -25,6 +25,6 @@
 [submodule "bundle/vim-js"]
 	path = bundle/vim-js
 	url = https://github.com/yuezk/vim-js
-[submodule "bundle/vim-jsx-pretty"]
-	path = bundle/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty
+[submodule "bundle/vim-polyglot"]
+	path = bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
